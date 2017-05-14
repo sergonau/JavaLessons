@@ -24,7 +24,32 @@ package Interview001;
 //
 //        A string consisting only of unique lowercase English letters. It is guaranteed that t contains all of the letters that occur in s.
 
-public class SortByString {
+public class SortByStringing {
 
-    // TODO: 17.04.17  
+    public static void main(String[] args) {
+        String s = "weather";
+        String t = "therapyw";
+        sortByString(s, t);
+    }
+
+    static String sortByString(String s, String t) {
+
+        StringBuilder sb = new StringBuilder();
+
+        System.out.println(sb.toString());
+
+        char[] s_arr = s.toCharArray();
+        char[] t_arr = t.toCharArray();
+
+        for (int i = 0; i < t_arr.length; i++) {
+            for (int j = 0; j < s_arr.length; j++) {
+                if (t_arr[i]==s_arr[j]) {
+                    sb.append(t_arr[i]);
+                }
+            }
+        }
+        return sb.toString();
+
+    }
+
 }

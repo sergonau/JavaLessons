@@ -66,7 +66,7 @@ class Z {
     public Z() { System.out.print("Z"); }
 }
 class X extends Z {
-    private Y m_objY = new Y();
+    private Y m_objY;
 
     public void setM_objY(Y m_objY) {
         this.m_objY = m_objY;
@@ -76,10 +76,12 @@ class X extends Z {
 
     public static void main(String[] args) {
         X x = new X();
-        Y y = new Y();
-        x.setM_objY(y);
+        X x1 = new X();
 
-        y.toString();
+        Y y = new Y();
+
+        x1.setM_objY(y);
+        x.setM_objY(y);
     }
 }
 

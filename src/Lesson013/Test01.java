@@ -8,8 +8,7 @@ package Lesson013;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Test01 {
 
@@ -33,6 +32,12 @@ public class Test01 {
     public static int maxDiv(int a, int b) {
 
         List<Integer> list = new ArrayList<>();
+
+        Map<String, String> map = new HashMap<>();
+
+        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+
+
         List<Integer> list1 = new ArrayList<>();
 
         for (int i = 1; i <= a; i++) {
